@@ -8,7 +8,8 @@ st.title("Visualización de Ventas - Tiendas de Conveniencia")
 #cargar el archivo
 archivo = st.file_uploader("Sube el archivo CSV", type=["csv"])
 
-"""if archivo is not None:
+"""
+if archivo is not None:
     df = pd.read_csv(archivo)
     st.subheader("Vista previa de datos")
     st.dataframe(df)
@@ -47,7 +48,8 @@ else:
     st.error("El archivo CSV debe contener las columnas: " + str(columnas_necesarias))
 
     
-st.title("Correlación de Pearson - ventas")"""
+st.title("Correlación de Pearson - ventas")
+"""
 
 if archivo is not None:
     df = pd.read_csv(archivo)
